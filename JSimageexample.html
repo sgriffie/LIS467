@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flip Image Upside Down</title>
+</head>
+<body>
+    <img id="myImage" src="default.jpg" alt="Default Image" width="300">
+    <button onclick="flipImage()">Flip Image</button>
+
+    <script>
+        function flipImage() {
+            const image = document.getElementById("myImage");
+            image.style.transform = "rotate(180deg)";
+        }
+    </script>
+</body>
+</html>
