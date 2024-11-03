@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Object Example with Pets</title>
+</head>
+<body>
+    <p id="petInfo"></p>
+    <script>
+        const pet = {
+            name: "Buddy",
+            type: "Dog",
+            age: 5,
+            breed: "Golden Retriever",
+            displayInfo: function() {
+                return `Pet Name: ${this.name}, Type: ${this.type}, Age: ${this.age}, Breed: ${this.breed}`;
+            }
+        };
+
+        document.getElementById("petInfo").innerHTML = pet.displayInfo();
+    </script>
+</body>
+</html>
